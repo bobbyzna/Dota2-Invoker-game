@@ -1,4 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.allPage {
+    background: linear-gradient(#b34e4b, #471f1e);
+    height: 100vh;
+    }
+.texty{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    text-align: center;
+    font-size: 16px;
+}
+.button{
+    border: 2px solid green;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: yellow;
+    }
+.diffImage{
+    border: 2px solid green;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: yellow;
+    height: 80px;
+    width: 80px;
+    left:  110%;
+    top: 44%;
+    position: absolute;
+}
+.spelly{
+    border-radius: 10px;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 45%;
+}
+#spell1{
+    left: 30%;
+}
+#spell2{
+    left: 40%;
+}
+#spell3{
+    left: 50%;
 }
