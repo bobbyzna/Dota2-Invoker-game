@@ -11,7 +11,7 @@ document.getElementById("changeDifficulty").addEventListener("click", function()
     else{
         i++;
     }
-    diffImgs.src = "img/" + difficultyImg[i] + ".jpg";
+    diffImgs.src = "Images/Difficulty/" + difficultyImg[i] + ".jpg";
 });
 
 //zjištění nastavené obtížnosti
