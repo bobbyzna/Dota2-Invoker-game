@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <audio src="Sounds/grand_master_difficulty.mp3" id="audioGrandMaster"></audio>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoker game</title>
-    <link rel="shortcut icon" href="Images/Invoker_minimap.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="Images/Invoker_minimap.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="allPage">
-        <div>
-            <img src="Images/Spells/Quas.jpg" class="spelly" id="spell1">
-            <img src="Images/Spells/Wex.jpg" class="spelly" id="spell2">
-            <img src="Images/Spells/Exort.jpg" class="spelly" id="spell3">
-        </div>
-        <div class="texty">
-            <div class="button">New game</div>
-            <div class="button">Stop</div>
-            <div class="button">Spell list</div>
-            <div class="button" id="changeDifficulty">Difficulty</div>
-            <!-- <div class="button"> -->
-                <img src="Images/Difficulty/bronze.jpg" alt="obtížnost" class ="diffImage">
-            <!-- </div> -->
-        </div>
-
+      <div class="controls">
+        <p>- Quas</p>
+        <p>- Wex</p>
+        <p>- Exort</p>
+        <p>- Invoke</p>
+        <p>- Spell 1</p>
+        <p>- Spell 2</p>
+      </div>
+      <div>
+        <img src="Images/Spells/Quas.jpg" class="spells" id="spell1" />
+        <img src="Images/Spells/Wex.jpg" class="spells" id="spell2" />
+        <img src="Images/Spells/Exort.jpg" class="spells" id="spell3" />
+      </div>
+      <div class="menu">
+        <button class="button">Classic</button>
+        <button class="button">Survival</button>
+        <button class="button">Combo</button>
+        <button class="button">Endless</button>
+        <button class="button" id="changeDifficulty">Difficulty</button>
+        <!-- <div class="button"> -->
+        <img
+          src="Images/Difficulty/bronze.jpg"
+          alt="obtížnost"
+          class="diffImage"
+        />
+        <!-- </div> -->
+      </div>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>

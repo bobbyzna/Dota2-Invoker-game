@@ -7,7 +7,7 @@
     background: linear-gradient(#b34e4b, #471f1e);
     height: 100vh;
     }
-.texty{
+.menu{
     position: absolute;
     top: 60%;
     left: 40%;
@@ -33,7 +33,7 @@
     top: 44%;
     position: absolute;
 }
-.spelly{
+.spells{
     border-radius: 10px;
     height: 64px;
     width: 64px;
