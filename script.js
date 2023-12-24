@@ -1,7 +1,7 @@
 var difficultyImg = ["bronze","silver","gold","platinum","master","grand_master",];
 var diffImgs = document.querySelector(".diffImage");
 var i = 0;
-
+var score = 0
 // Spell variables
 var spellShuffle = ["Quas", "Wex", "Exort"];
 var Cold_Snap = ["Quas", "Quas", "Quas"];
@@ -102,6 +102,8 @@ function invokeCheck() {
       };
 
     if (twoSpells[0] == spells[newSpell]) {
+        score++
+        console.log(score);
         oldSpell = newSpell
         newSpell = randomSpell()
         while (oldSpell == newSpell) {
@@ -110,9 +112,10 @@ function invokeCheck() {
         document.getElementById("randomSpell").src = "Images/Spells/" + spells[newSpell] + ".jpg";
         
     } else {
+      score = 0
       twoSpells.splice(0, twoSpells.length)
-      document.getElementById("spell4").src = "Images/Spells/empty_spell.jpg.jpg";
-      document.getElementById("spell5").src = "Images/Spells/empty_spell.jpg.jpg";
+      document.getElementById("spell4").src = "Images/Spells/Empty_spell.jpg.jpg";
+      document.getElementById("spell5").src = "Images/Spells/Empty_spell.jpg.jpg";
       hideSpells("hidden")
     }
 };
@@ -120,13 +123,13 @@ function invokeCheck() {
 function classic() {
     hideSpells("visible")
 };
-function survival() {
+function endless() {
     hideSpells("visible")
 };
 function combo() {
     hideSpells("visible")
 };
-function endless() {
+function survival() {
     hideSpells("visible")
     newSpell = randomSpell()
     document.getElementById("randomSpell").src = "Images/Spells/" + spells[newSpell] + ".jpg";
